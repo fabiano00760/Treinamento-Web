@@ -50,7 +50,7 @@ public class CheckoutPage {
     }
 
     public void chechoutCompleto(){
-        driver.findElement(By.xpath("//h2[contains(.,'THANK YOU FOR YOUR ORDER')]")).getText().contains("THANK YOU FOR YOUR ORDER");
+        driver.findElement(By.xpath("//h2[@class='complete-header'][contains(.,'Thank you for your order!')]")).getText().contains("THANK YOU FOR YOUR ORDER");
     }
 
 

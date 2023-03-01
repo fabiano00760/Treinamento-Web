@@ -1,8 +1,8 @@
 package Stepes;
 
+
 import FabricaDeDriver.FDriver;
 import Pages.CarrinhoDeCompraPage;
-import Pages.LoginPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

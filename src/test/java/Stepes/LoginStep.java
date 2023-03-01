@@ -2,17 +2,12 @@ package Stepes;
 
 import FabricaDeDriver.FDriver;
 import Pages.LoginPage;
-
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
-import java.time.Duration;
 
 
 public class LoginStep {
@@ -21,14 +16,13 @@ public class LoginStep {
 
     public LoginStep() {
         this.loginPage = new LoginPage();
-      this.driver = FDriver.getDrive() ;
+        this.driver = FDriver.getDrive();
     }
 
-    @Given ("que eu esteja na pagina home {string}")
+    @Given("que eu esteja na pagina home {string}")
     public void que_eu_esteja_na_pagina_home(String url) {
-     driver.get(url);
+        driver.get(url);
     }
-
 
 
     @When("no capo login preencho o campo de username com {string}")
@@ -44,7 +38,7 @@ public class LoginStep {
 
     @And("clico no btn logon")
     public void clico_no_btn_logon() {
-       loginPage.CampoBtn();
+        loginPage.CampoBtn();
 
     }
 
@@ -52,7 +46,6 @@ public class LoginStep {
     public void logo_com_sucesso() {
         loginPage.ValidarTele();
     }
-
 
 
 }
